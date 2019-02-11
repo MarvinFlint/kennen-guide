@@ -13,21 +13,35 @@
   <body>
     <div class="main">
         <div class="header">
-
+          <h2 class="choice-heading title">Which rune?</h2>
+          <div class="selectors">
+              <ul class="runes">
+                <a href="javascript:runeSwitch('#klepto', '#display-klepto')"><li class="switcher" id="klepto"><img class="rune-symbol" src="img/inspiration/Kleptomancy_rune.png" alt=""></li></a>
+                <a href="javascript:runeSwitch('#phaserush', '#display-phaserush')"><li class="switcher" id="phaserush"><img class="rune-symbol" src="img/sorcery/phase_rush_rune.png" alt=""></li></a>
+                <a href="javascript:runeSwitch('#electrocute', '#display-electrocute')"><li class="switcher" id="electrocute"><img class="rune-symbol" src="img/domination/electrocute_rune.png" alt=""></li></a>
+                <a href="javascript:runeSwitch('#pta', '#display-pta')"><li class="switcher" id="pta"><img class="rune-symbol" src="img/precision/pta_rune.png" alt=""></li></a>
+                <a href="javascript:runeSwitch('#conqueror', '#display-conqueror')"><li class="switcher" id="conqueror"><img class="rune-symbol" src="img/precision/conqueror_rune.png" alt=""></li></a>
+                <a href="javascript:runeSwitch('#fleet', '#display-fleet')"><li class="switcher" id="fleet"><img class="rune-symbol" src="img/precision/fleet_rune.png" alt=""></li></a>
+              </ul>
+          </div>
+          <h2 class="choice-heading title">Which lane do you play?</h2>
+          <div class="selectors">
+              <ul class="lane">
+                <a class="onclick"><li class="switcher" id="toplane"><img class="role-symbol" src="img/roles/toplane.png"></li>
+                <a class="onclick"><li class="switcher" id="midlane"><img class="role-symbol" src="img/roles/midlane.png"></li></a>
+                <a class="onclick"><li class="switcher" id="botlane"><img class="role-symbol" src="img/roles/botlane.png"></li></a>
+              </ul>
+          </div>
+          <h2 class="choice-heading title">Ad or AP?</h2>
+          <div class="selectors">
+              <ul class="adaptive-force">
+                <a href><li class="switcher af" id="af-ap"><img class="adaptive-force-symbol" src="img/stats/ap.png"></li></a>
+                <a href><li class="switcher af" id="af-ad"><img class="adaptive-force-symbol" src="img/stats/ad.png"></li></a>
+              </ul>
+          </div>
         </div>
         <div class="content">
-            <div class="section" id="runes">
-                <h1 class="section-heading title">Click on a keystone to get started!</h1>
-                <div class="selectors">
-                    <ul class="runes">
-                      <a href="javascript:runeSwitch('#klepto', '#display-klepto')"><li class="switcher" id="klepto"><img class="rune-symbol" src="img/inspiration/Kleptomancy_rune.png" alt=""></li></a>
-                      <a href="javascript:runeSwitch('#phaserush', '#display-phaserush')"><li class="switcher" id="phaserush"><img class="rune-symbol" src="img/sorcery/phase_rush_rune.png" alt=""></li></a>
-                      <a href="javascript:runeSwitch('#electrocute', '#display-electrocute')"><li class="switcher" id="electrocute"><img class="rune-symbol" src="img/domination/electrocute_rune.png" alt=""></li></a>
-                      <a href="javascript:runeSwitch('#pta', '#display-pta')"><li class="switcher" id="pta"><img class="rune-symbol" src="img/precision/pta_rune.png" alt=""></li></a>
-                      <a href="javascript:runeSwitch('#conqueror', '#display-conqueror')"><li class="switcher" id="conqueror"><img class="rune-symbol" src="img/precision/conqueror_rune.png" alt=""></li></a>
-                      <a href="javascript:runeSwitch('#fleet', '#display-fleet')"><li class="switcher" id="fleet"><img class="rune-symbol" src="img/precision/fleet_rune.png" alt=""></li></a>
-                    </ul>
-                </div>
+            <div class="section" id="runes">               
                 <div id ="runePartial">
                 </div>
             </div>

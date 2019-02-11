@@ -27,4 +27,8 @@ function runeSwitch(symbol_id, div_id){
             $("#matchups").load("partials/matchups.html");
             }
 
-        }
+}
+
+$(".onclick").click(function(){
+  $(".title").toggle();
+})

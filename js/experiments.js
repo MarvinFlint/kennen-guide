@@ -20,3 +20,6 @@ function toggleSection(div_id){
    }
 }
 */
+$("switch").click(function(){
+  $("body").css("opacity", "0");
+})
