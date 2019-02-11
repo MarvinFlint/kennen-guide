@@ -15,16 +15,16 @@ function runeSwitch(symbol_id, div_id){
           $(symbol_id).addClass("active-switcher");
 
           if ($("#display-klepto").hasClass("active") || $("#display-phaserush").hasClass("active") || $("#display-electrocute").hasClass("active")){
-            $("#buildPartial").load("partials/buildsAP.html");
-            $("#gameplay").load("partials/gameplayAP.html");
-            $("#tricks").load("partials/tricksAP.html");
-            $("#matchups").load("partials/matchups.html");
+            $("#buildPartial").load("partials/builds/buildsAP.html");
+            $("#gameplay").load("partials/gameplay/gameplayAP.html");
+            $("#tricks").load("partials/tricks/tricksAP.html");
+            $("#matchups").load("partials/matchups/matchups.html");
               }
           else if( $("#display-pta").hasClass("active") || $("#display-conqueror").hasClass("active") || $("#display-fleet").hasClass("active")){
-            $("#buildPartial").load("partials/buildsAD.html");
-            $("#gameplay").load("partials/gameplayAD.html");
-            $("#tricks").load("partials/tricksAD.html");
-            $("#matchups").load("partials/matchups.html");
+            $("#buildPartial").load("partials/builds/buildsAD.html");
+            $("#gameplay").load("partials/gameplay/gameplayAD.html");
+            $("#tricks").load("partials/tricks/tricksAD.html");
+            $("#matchups").load("partials/matchups/matchups.html");
             }
 
         }
