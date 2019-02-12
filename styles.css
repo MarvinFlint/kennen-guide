@@ -63,13 +63,10 @@ src: url("fonts/adam_cg_pro.otf");
 /**************/
 .header{
   width: 100%;
-  height: 300px;
-  background-image: url('img/backgrounds/basic.jpg');
-  background-position: center;
-  background-size: cover;
-  opacity: 0.8;
+  background-color: #232323;
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
 .choices{
   width: 50%;
@@ -84,14 +81,11 @@ src: url("fonts/adam_cg_pro.otf");
   color: white;
   text-align: center;
 }
-
-
 /**************/
-/* Section: Rune Panel */
-/**************/
-
 /* Navigation */
+/**************/
 
+/* Rune-choice */
 
 .selectors{
   position: relative;
@@ -111,11 +105,44 @@ src: url("fonts/adam_cg_pro.otf");
   border: 1px solid black;
   background-color: #3d3d3d;
   cursor: pointer;
+  transition: all 400ms ease-in-out;
 }
 .rune-symbol{
   width: 100%;
   height: auto;
 }
+
+/* Lane-choice */
+
+.lane{
+  display: flex;  
+  padding: 0;
+}
+.role-symbol{
+  width: 100%;
+  height: 100%;
+}
+
+/* Stat choice */
+
+.adaptive-force{
+  display: flex;
+  padding: 0;
+}
+.adaptive-force-symbol{
+  width: 60%;
+  height: 60%;
+  margin: 0 auto;
+}
+.af-choice{
+  display: flex;
+  align-items: center;
+}
+/**************/
+/* Section: Rune Panel */
+/**************/
+
+
 
 /* Runes Display */
 
@@ -123,18 +150,12 @@ src: url("fonts/adam_cg_pro.otf");
   display: flex;
   flex-direction: column;
   position: relative;
-  min-height: 700px;
 }
 
-.runes-display{
-  position: absolute;
-  top:150px;
-  left:0;
+.runes-display{  
   width:100%;
-  max-height: 500px;
-  margin-top: 50px;
   display: flex;
-  opacity: 0;
+  opacity: 1;
   box-sizing: border-box;
   transition: all 750ms ease-in-out;
 }
@@ -260,7 +281,7 @@ src: url("fonts/adam_cg_pro.otf");
 .active-switcher{
   box-shadow: inset 0px 0px 10px #000000;
   background-color: #6d6d6d;
-  transition: all 200ms ease-in-out;
+  transition: all 400ms ease-in-out;
 }
 footer{
   width: 90%;
