@@ -63,10 +63,14 @@ src: url("fonts/adam_cg_pro.otf");
 /**************/
 .header{
   width: 100%;
+  max-height: 10000px;
   background-color: #232323;
   display: flex;
   align-items: center;
   flex-direction: column;
+  position: relative;
+  overflow-y: hidden;
+  transition: all 500ms ease-in-out;
 }
 .choices{
   width: 50%;
@@ -80,6 +84,30 @@ src: url("fonts/adam_cg_pro.otf");
   font-family: 'AdamCG';
   color: white;
   text-align: center;
+}
+.toggle{
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background-color: #212121;
+  cursor: pointer;
+  transition: all 500ms;
+}
+.toggle-pic{
+  width:50%;
+  height: 50%;
+  margin: 25%;
+  
+}
+.rotated {
+  transform: rotate(180deg);
+  -ms-transform: rotate(180deg); /* IE 9 */
+  -moz-transform: rotate(180deg); /* Firefox */
+  -webkit-transform: rotate(180deg); /* Safari and Chrome */
+  -o-transform: rotate(180deg); /* Opera */
+  transition: all 500ms;
 }
 /**************/
 /* Navigation */
@@ -282,6 +310,10 @@ src: url("fonts/adam_cg_pro.otf");
   box-shadow: inset 0px 0px 10px #000000;
   background-color: #6d6d6d;
   transition: all 400ms ease-in-out;
+}
+.toggled{
+  max-height: 100px;
+  transition: max-height 500ms ease-in-out;
 }
 footer{
   width: 90%;
