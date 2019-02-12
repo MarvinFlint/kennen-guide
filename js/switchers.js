@@ -1,5 +1,5 @@
 
-function runeSwitch(symbol_id, div_id){
+function setActive(symbol_id, div_id){
           var divs = ['#display-klepto', '#display-phaserush', '#display-electrocute', '#display-pta', '#display-conqueror', '#display-fleet'];
           var symbols = ['#klepto', '#phaserush', '#electrocute', '#pta', '#conqueror', '#fleet'];
           for (var i = 0; i < divs.length; i++) {
