@@ -97,6 +97,9 @@ src: url("fonts/adam_cg_pro.otf");
   align-items: center;
   margin: 0 auto;
 }
+.choice-heading{
+  margin-bottom: 10px;
+}
 .subheading{
   font-size: 35px;
   font-family: 'AdamCG';
