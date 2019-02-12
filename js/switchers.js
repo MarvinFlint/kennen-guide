@@ -41,6 +41,7 @@ $(function(){
       $("#gameplay").load("partials/gameplay/gameplayAPbot.html");
       $("#buildPartial").load("partials/builds/buildsAP.html");
     }
+  $(".welcome").css("display", "none");
   })
 })
 
