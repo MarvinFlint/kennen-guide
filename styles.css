@@ -39,6 +39,7 @@ ul li{
 .content{
   width: 100%;
   height: auto;
+  margin-top:100px;
 }
 .section{
   width: 100%;
@@ -63,14 +64,20 @@ src: url("fonts/adam_cg_pro.otf");
 /**************/
 .header{
   width: 100%;
+  height: 100vh;
   max-height: 10000px;
   background-color: #232323;
   display: flex;
   align-items: center;
   flex-direction: column;
-  position: relative;
+  position: fixed;
   overflow-y: hidden;
   transition: all 500ms ease-in-out;
+  top:0;
+  left:0;
+  width:90%;
+  margin: 0 5%;
+  z-index: 2;
 }
 .choices{
   width: 50%;
@@ -348,9 +355,7 @@ footer{
 
 
   /* RUNES */
-  #runes{
-    min-height: 1500px;
-  }
+  
   .runes-display{
     top: 300px;
     flex-direction: column;
