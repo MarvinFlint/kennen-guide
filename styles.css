@@ -109,9 +109,8 @@ src: url("fonts/adam_cg_pro.otf");
   width: 55px;
   height: 55px;
   position: absolute;
-  bottom: 15px;
+  top: 25px;
   right: 15px;
-  background-color: #212121;
   cursor: pointer;
   transition: all 850ms;
 }
@@ -422,9 +421,9 @@ footer{
   }
   .choice-heading{
     font-size: 1.5em;
-  }
+  }  
   .toggle{
-    bottom: 30px;
+    right: 0;
   }
   /* RUNES */
   

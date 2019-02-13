@@ -54,13 +54,47 @@ $(function(){
     }
     $(".welcome").css("display", "none");
     $("#abilities").css("display", "flex");
-
+    
     // Loading different ability-max partials
-    if( $("#fighter").hasClass("active-switcher")){
+    if( $("#tank").hasClass("active-switcher")){
         if( $("#klepto").hasClass("active-switcher") ){
+          $(".ability-load").load("partials/abilities/maxEW.html");
+        }
+        else{
           $(".ability-load").load("partials/abilities/maxQ.html");
         }
     }
+    if( $("#mage").hasClass("active-switcher") || $("#marksman").hasClass("active-switcher")){
+      if( $("#af-ap").hasClass("active-switcher") ){
+        $(".ability-load").load("partials/abilities/maxQ.html")
+      }
+      else if( $("#af-ad").hasClass("active-switcher") ){
+        $(".ability-load").load("partials/abilities/maxWE.html")
+      }
+      
+    }
+    if( $("#fighter").hasClass("active-switcher") ){
+      if( $("#klepto").hasClass("active-switcher") ){
+        $(".ability-load").load("partials/abilities/maxEW.html");
+      }
+      else if( $("#af-ad").hasClass("active-switcher") ){
+        $(".ability-load").load("partials/abilities/maxEW.html");
+      }
+      else if( $("#af-ap").hasClass("active-switcher") ){
+        $(".ability-load").load("partials/abilities/maxWE.html");
+      }
+    }
+    if( $("#assassin").hasClass("active-switcher") ){
+      if( $("#klepto").hasClass("active-switcher") ){
+        $(".ability-load").load("partials/abilities/maxEW.html");
+      }
+      else if( $("#af-ad").hasClass("active-switcher") ){
+        $(".ability-load").load("partials/abilities/maxEW.html");
+      }
+      else if( $("#af-ap").hasClass("active-switcher") ){
+        $(".ability-load").load("partials/abilities/maxQW.html");
+      }
+    }    
   })
 })
 
