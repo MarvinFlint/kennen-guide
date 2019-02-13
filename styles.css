@@ -372,13 +372,18 @@ footer{
   .header{
     width: 100%;
     margin: 0;
-    max-height: 90vh;
+    max-height: 100vh;
   }
   .main-headline{
     font-size: 2em;
     padding-top: 15px;
   }
-
+  .choice-heading{
+    font-size: 1.5em;
+  }
+  .toggle{
+    bottom: 15vh;
+  }
   /* RUNES */
   
   .runes-display{
