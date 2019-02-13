@@ -60,8 +60,11 @@ $(function(){
         if( $("#klepto").hasClass("active-switcher") ){
           $(".ability-load").load("partials/abilities/maxEW.html");
         }
-        else{
+        else if( $("#af-ap").hasClass("active-switcher") ){
           $(".ability-load").load("partials/abilities/maxQ.html");
+        }
+        else if( $("#af-ad").hasClass("active-switcher") ){
+          $(".ability-load").load("partials/abilities/maxWE.html");
         }
     }
     if( $("#mage").hasClass("active-switcher") || $("#marksman").hasClass("active-switcher")){
