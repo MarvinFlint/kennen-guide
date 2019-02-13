@@ -208,6 +208,25 @@ src: url("fonts/adam_cg_pro.otf");
 .ability-choice{
   background-color: #fbfbfb;
 }
+.ability-load{
+  color: white;
+  font-family: "AdamCG";
+  font-size: 66px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.ability-icon{
+  width: 55px;
+  height: 55px;
+  padding: 18px;
+}
+.ability-sep{
+  color: white;
+  font-family: "AdamCG";
+  font-size: 66px;
+  margin-bottom: 15px;
+}
 /**************/
 /* Section: Rune Panel */
 /**************/

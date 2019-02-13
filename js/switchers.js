@@ -25,6 +25,8 @@ $(function(){
         $(this).addClass("active-switcher"); 
       }   
     }
+
+    // Loading different build and gameplay partials
     if( $("#toplane").hasClass("active-switcher") && $("#af-ap").hasClass("active-switcher") ){
       $("#gameplay").load("partials/gameplay/gameplayAPtop.html");
       $("#builds").load("partials/builds/buildsAP.html");
@@ -52,7 +54,13 @@ $(function(){
     }
     $(".welcome").css("display", "none");
     $("#abilities").css("display", "flex");
-    
+
+    // Loading different ability-max partials
+    if( $("#fighter").hasClass("active-switcher")){
+        if( $("#klepto").hasClass("active-switcher") ){
+          $(".ability-load").load("partials/abilities/maxQ.html");
+        }
+    }
   })
 })
 
