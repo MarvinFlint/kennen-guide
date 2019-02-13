@@ -23,38 +23,37 @@ $(function(){
     }
     if( $("#toplane").hasClass("active-switcher") && $("#af-ap").hasClass("active-switcher") ){
       $("#gameplay").load("partials/gameplay/gameplayAPtop.html");
-      $("#buildPartial").load("partials/builds/buildsAP.html");
+      $("#builds").load("partials/builds/buildsAP.html");
     }
     else if( $("#toplane").hasClass("active-switcher") && $("#af-ad").hasClass("active-switcher") ){
       $("#gameplay").load("partials/gameplay/gameplayADtop.html");
-      $("#buildPartial").load("partials/builds/buildsADtop.html");
+      $("#builds").load("partials/builds/buildsADtop.html");
     }
     else if( $("#midlane").hasClass("active-switcher") && $("#af-ap").hasClass("active-switcher") ){
       $("#gameplay").load("partials/gameplay/gameplayAPtop.html");
-      $("#buildPartial").load("partials/builds/buildsAP.html");
+      $("#builds").load("partials/builds/buildsAP.html");
     }
     else if( $("#botlane").hasClass("active-switcher") && $("#af-ad").hasClass("active-switcher") ){
       $("#gameplay").load("partials/gameplay/gameplayADbot.html");
-      $("#buildPartial").load("partials/builds/buildsADbot.html");
+      $("#builds").load("partials/builds/buildsADbot.html");
     }
     else if( $("#botlane").hasClass("active-switcher") && $("#af-ap").hasClass("active-switcher") ){
       $("#gameplay").load("partials/gameplay/gameplayAPbot.html");
-      $("#buildPartial").load("partials/builds/buildsAP.html");
+      $("#builds").load("partials/builds/buildsAP.html");
     }
-  $(".welcome").css("display", "none");
+    $(".welcome").css("display", "none");
   })
 })
 
 $(function(){
   $(".toggle").click(function(){
-      if( $(".header").hasClass("toggled")){        
-        $(".header").removeClass("toggled");
-        $(this).removeClass("rotated");
-      }
-      else{        
-        $(".header").addClass("toggled");
-        $(this).addClass("rotated");
-      } 
-
+  if( $(".header").hasClass("toggled")){
+    $(".header").removeClass("toggled");
+    $(".toggle").removeClass("rotated");
+    }
+  else{
+    $(".header").addClass("toggled");
+    $(".toggle").addClass("rotated");
+  }  
   })
 })
