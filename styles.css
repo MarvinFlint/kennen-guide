@@ -87,6 +87,7 @@ src: url("fonts/adam_cg_pro.otf");
   width:90%;
   margin: 0 5%;
   z-index: 2;
+  border-bottom: 0.5px solid white;
 }
 .choices{
   width: 50%;
@@ -112,7 +113,7 @@ src: url("fonts/adam_cg_pro.otf");
   right: 15px;
   background-color: #212121;
   cursor: pointer;
-  transition: all 500ms;
+  transition: all 850ms;
 }
 .toggle-pic{
   width:50%;
@@ -184,6 +185,28 @@ src: url("fonts/adam_cg_pro.otf");
 .af-choice{
   display: flex;
   align-items: center;
+}
+
+/**************/
+/* Section: Ability Max Panel */
+/**************/
+#abilities{
+  background-color: #232323;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+}
+
+.max-prio{
+  display: inline-flex;
+  padding: 0;
+}
+.class-symbol{
+  width: 100%;
+  height: 100%;
+}
+.ability-choice{
+  background-color: #fbfbfb;
 }
 /**************/
 /* Section: Rune Panel */
@@ -334,7 +357,7 @@ src: url("fonts/adam_cg_pro.otf");
   transition: all 400ms ease-in-out;
 }
 .toggled{
-  max-height: 100px;
+  max-height: 100px !important;
   transition: max-height 500ms ease-in-out;
 }
 footer{
@@ -382,7 +405,7 @@ footer{
     font-size: 1.5em;
   }
   .toggle{
-    bottom: 15vh;
+    bottom: 30px;
   }
   /* RUNES */
   
