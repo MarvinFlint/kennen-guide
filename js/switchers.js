@@ -51,6 +51,7 @@ $(function(){
       }
     }
     else if( $("#botlane").hasClass("active-switcher") && $("#af-ad").hasClass("active-switcher") ){
+      $("#builds").load("partials/builds/buildsADbot.html");
       $("#gameplay").load("partials/gameplay/gameplayADbot.html");
       $("#tricks").load("partials/tricks/tricksAD.html");
     }

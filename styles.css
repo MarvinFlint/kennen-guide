@@ -63,7 +63,7 @@ ul li{
 }
 .welcome-message{
   margin: 0 auto;
-  font-size: 25px;
+  font-size: 25px !important;
 }
 @font-face {
 font-family: AdamCG;
@@ -263,7 +263,7 @@ src: url("fonts/adam_cg_pro.otf");
 }
 .runes-desc{
     padding: 15px 0;
-    font-size: 1.3em;
+    font-size: 20px;
     color: white;
     width: 85%;
     margin-left: 7.5%;
@@ -302,11 +302,13 @@ src: url("fonts/adam_cg_pro.otf");
   width: 50%;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
   border: 1px solid black;
   border-radius: 25px;
   margin: 10px;
   background-color: #363636;
+}
+#crit{
+  margin: 0 auto !important;
 }
 .build-pictures{
   height: 40px;
@@ -319,7 +321,7 @@ src: url("fonts/adam_cg_pro.otf");
   height: auto;
 }
 .add-info{
-  font-size: 1.2em;
+  font-size: 20px;
   text-align: center;
 }
 .build-sections{
@@ -355,7 +357,7 @@ src: url("fonts/adam_cg_pro.otf");
 .gameplay-section p{
   width: 100%;
   margin: 0 auto;
-  font-size: 1.2em;
+  font-size: 20px;
 }
 /**************/
 /* Section: Tricks */
@@ -441,7 +443,7 @@ footer{
     max-height: 100vh;
   }
   .main-headline{
-    font-size: 2em;
+    font-size: 2em !important;
     padding-top: 15px;
   }
   .choice-heading{
@@ -450,9 +452,7 @@ footer{
   .toggle{
     right: 0;
   }
-  .title{
-    font-size: 2.5em;
-  }
+  
   /* RUNES */
   
   .runes-display{
@@ -468,7 +468,7 @@ footer{
     width:100%;
   }
   .runes-desc{
-    font-size: 1.7em;
+    font-size: 20px;
   }
   /* BUILDS */
   .center-builds{
@@ -501,7 +501,7 @@ footer{
     width: 90%;
   }
   .gameplay-section p{
-    font-size: 1.7em;
+    font-size: 20px;
   }
   /* TRICKS */
   #tricks ul{
