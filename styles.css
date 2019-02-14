@@ -292,6 +292,8 @@ src: url("fonts/adam_cg_pro.otf");
 }
 #sit-items{
   width: 100%;
+  background-color: unset;
+  border: none;
 }
 .builds{
   display: inline-flex;
@@ -301,6 +303,10 @@ src: url("fonts/adam_cg_pro.otf");
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 25px;
+  margin: 10px;
+  background-color: #363636;
 }
 .build-pictures{
   height: 40px;
@@ -318,14 +324,16 @@ src: url("fonts/adam_cg_pro.otf");
 }
 .build-sections{
   display: inline-flex;
-  align-items: center;
+  align-items: self-start;
 }
 .build-section{
   display: flex;
   flex-direction: column;
-}
-#sit-items{
-  width: 50%;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 25px;
+  margin: 10px;
+  background-color: #363636;
 }
 /**************/
 /* Section: Gameplay Panel */
