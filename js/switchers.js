@@ -107,7 +107,7 @@ $(function(){
         $(".ability-load").load("partials/abilities/maxEW.html");
       }
       else if( $("#af-ap").hasClass("active-switcher") ){
-        $(".ability-load").load("partials/abilities/maxQW.html");
+        $(".ability-load").load("partials/abilities/maxQ.html");
       }
     }    
   })

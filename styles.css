@@ -450,6 +450,9 @@ footer{
   .toggle{
     right: 0;
   }
+  .title{
+    font-size: 2.5em;
+  }
   /* RUNES */
   
   .runes-display{
@@ -472,8 +475,13 @@ footer{
     display: flex;
     flex-direction: column;
   }
+  .builds{
+    display: flex;
+    flex-direction: column;
+  }
   .build{
-    width: 100% !important;
+    width: 90% !important;
+    margin: 5%;
   }
   .build-sections{
     display: flex;
@@ -481,6 +489,9 @@ footer{
   }
   .build-section{
     width: 90%;
+    margin: 5%;
+    padding: 10px 0 0 0;
+
   }
   /* GAMEPLAY */
   .gameplay-sections{
