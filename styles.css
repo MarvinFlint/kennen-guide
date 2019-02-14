@@ -34,17 +34,18 @@ ul li{
   display: flex;
   flex-direction: column;
   opacity: 0.9;
+  min-height: 100vh;
 }
 
 .content{
   width: 100%;
   height: auto;
+  margin-top:100px;
 }
 .section{
   width: 100%;
   height: auto;
   position: relative;
-  border-bottom: 1px solid white;
   box-sizing: border-box;
 }
 .title{
@@ -54,6 +55,16 @@ ul li{
   font-size: 3em;
 }
 
+.welcome{
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+}
+.welcome-message{
+  margin: 0 auto;
+  font-size: 25px;
+}
 @font-face {
 font-family: AdamCG;
 src: url("fonts/adam_cg_pro.otf");
@@ -62,11 +73,21 @@ src: url("fonts/adam_cg_pro.otf");
 /* Header */
 /**************/
 .header{
-  width: 100%;
+  height: 100vh;
+  max-height: 10000px;
   background-color: #232323;
   display: flex;
   align-items: center;
   flex-direction: column;
+  position: fixed;
+  overflow-y: hidden;
+  transition: all 500ms ease-in-out;
+  top:0;
+  left:0;
+  width:90%;
+  margin: 0 5%;
+  z-index: 2;
+  border-bottom: 0.5px solid white;
 }
 .choices{
   width: 50%;
@@ -75,11 +96,37 @@ src: url("fonts/adam_cg_pro.otf");
   align-items: center;
   margin: 0 auto;
 }
+.choice-heading{
+  margin-bottom: 10px;
+}
 .subheading{
   font-size: 35px;
   font-family: 'AdamCG';
   color: white;
   text-align: center;
+}
+.toggle{
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  top: 25px;
+  right: 15px;
+  cursor: pointer;
+  transition: all 850ms;
+}
+.toggle-pic{
+  width:50%;
+  height: 50%;
+  margin: 25%;
+  
+}
+.rotated {
+  transform: rotate(180deg);
+  -ms-transform: rotate(180deg); /* IE 9 */
+  -moz-transform: rotate(180deg); /* Firefox */
+  -webkit-transform: rotate(180deg); /* Safari and Chrome */
+  -o-transform: rotate(180deg); /* Opera */
+  transition: all 500ms;
 }
 /**************/
 /* Navigation */
@@ -137,6 +184,47 @@ src: url("fonts/adam_cg_pro.otf");
 .af-choice{
   display: flex;
   align-items: center;
+}
+
+/**************/
+/* Section: Ability Max Panel */
+/**************/
+#abilities{
+  background-color: #232323;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+}
+
+.max-prio{
+  display: inline-flex;
+  padding: 0;
+}
+.class-symbol{
+  width: 100%;
+  height: 100%;
+}
+.ability-choice{
+  background-color: #fbfbfb;
+}
+.ability-load{
+  color: white;
+  font-family: "AdamCG";
+  font-size: 66px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.ability-icon{
+  width: 55px;
+  height: 55px;
+  padding: 18px;
+}
+.ability-sep{
+  color: white;
+  font-family: "AdamCG";
+  font-size: 66px;
+  margin-bottom: 15px;
 }
 /**************/
 /* Section: Rune Panel */
@@ -197,10 +285,28 @@ src: url("fonts/adam_cg_pro.otf");
   display: flex;
   flex-direction: column;
 }
-.build{
-  width: 33%;
+.center-builds{
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+#sit-items{
+  width: 100%;
+  background-color: unset;
+  border: none;
+}
+.builds{
+  display: inline-flex;
+}
+.build{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 25px;
+  margin: 10px;
+  background-color: #363636;
 }
 .build-pictures{
   height: 40px;
@@ -213,15 +319,21 @@ src: url("fonts/adam_cg_pro.otf");
   height: auto;
 }
 .add-info{
-  font-size: 1.5em;
+  font-size: 1.2em;
   text-align: center;
 }
-.center-builds{
+.build-sections{
   display: inline-flex;
+  align-items: self-start;
 }
-.exceptions{
-  width: 100%;
-  height: auto;
+.build-section{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 25px;
+  margin: 10px;
+  background-color: #363636;
 }
 /**************/
 /* Section: Gameplay Panel */
@@ -256,8 +368,12 @@ src: url("fonts/adam_cg_pro.otf");
 }
 #tricks ul{
   padding: 0;
-  font-size: 17px;
-  font-family: "AdamCG";
+  font-size: 20px;
+  font-family: "Open Sans";
+  width: 50%;
+}
+#tricks ul li{
+  padding: 15px;
 }
 
 /**************/
@@ -283,11 +399,15 @@ src: url("fonts/adam_cg_pro.otf");
   background-color: #6d6d6d;
   transition: all 400ms ease-in-out;
 }
+.toggled{
+  max-height: 100px !important;
+  transition: max-height 500ms ease-in-out;
+}
 footer{
   width: 90%;
   margin: 0 0 0 5%;
-  min-height: 120px;
-
+  min-height: 100px;
+  background-color: rgba(3,3,3,0.8);
   color: white;
   text-decoration: none;
 }
@@ -301,6 +421,9 @@ footer{
   color: white;
 }
 
+.important{
+  color: #008bff;
+}
 /**********/
 /* MOBILE */
 /**********/
@@ -312,13 +435,23 @@ footer{
     margin: 0;
     min-height: 100vh !important;
   }
-  
-
-
-  /* RUNES */
-  #runes{
-    min-height: 1500px;
+  .header{
+    width: 100%;
+    margin: 0;
+    max-height: 100vh;
   }
+  .main-headline{
+    font-size: 2em;
+    padding-top: 15px;
+  }
+  .choice-heading{
+    font-size: 1.5em;
+  }  
+  .toggle{
+    right: 0;
+  }
+  /* RUNES */
+  
   .runes-display{
     top: 300px;
     flex-direction: column;
@@ -340,7 +473,14 @@ footer{
     flex-direction: column;
   }
   .build{
-    width: 100%;
+    width: 100% !important;
+  }
+  .build-sections{
+    display: flex;
+    flex-direction: column;
+  }
+  .build-section{
+    width: 90%;
   }
   /* GAMEPLAY */
   .gameplay-sections{
@@ -351,6 +491,10 @@ footer{
   }
   .gameplay-section p{
     font-size: 1.7em;
+  }
+  /* TRICKS */
+  #tricks ul{
+    width: 100%;
   }
   footer{
     width: 100%;
