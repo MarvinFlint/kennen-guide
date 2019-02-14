@@ -51,6 +51,7 @@ $(function(){
       }
     }
     else if( $("#botlane").hasClass("active-switcher") && $("#af-ad").hasClass("active-switcher") ){
+      $("#builds").load("partials/builds/buildsADbot.html");
       $("#gameplay").load("partials/gameplay/gameplayADbot.html");
       $("#tricks").load("partials/tricks/tricksAD.html");
     }
@@ -107,7 +108,7 @@ $(function(){
         $(".ability-load").load("partials/abilities/maxEW.html");
       }
       else if( $("#af-ap").hasClass("active-switcher") ){
-        $(".ability-load").load("partials/abilities/maxQW.html");
+        $(".ability-load").load("partials/abilities/maxQ.html");
       }
     }    
   })
