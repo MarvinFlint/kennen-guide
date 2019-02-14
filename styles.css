@@ -290,10 +290,17 @@ src: url("fonts/adam_cg_pro.otf");
   flex-direction: column;
   align-items: center;
 }
+#sit-items{
+  width: 100%;
+}
+.builds{
+  display: inline-flex;
+}
 .build{
   width: 50%;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 }
 .build-pictures{
   height: 40px;
@@ -309,10 +316,16 @@ src: url("fonts/adam_cg_pro.otf");
   font-size: 1.2em;
   text-align: center;
 }
-
-.exceptions{
-  width: 100%;
-  height: auto;
+.build-sections{
+  display: inline-flex;
+  align-items: center;
+}
+.build-section{
+  display: flex;
+  flex-direction: column;
+}
+#sit-items{
+  width: 50%;
 }
 /**************/
 /* Section: Gameplay Panel */
@@ -448,7 +461,7 @@ footer{
     flex-direction: column;
   }
   .build{
-    width: 100%;
+    width: 100% !important;
   }
   /* GAMEPLAY */
   .gameplay-sections{
