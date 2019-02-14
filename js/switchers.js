@@ -28,32 +28,44 @@ $(function(){
 
     // Loading different build and gameplay partials
     if( $("#toplane").hasClass("active-switcher") && $("#af-ap").hasClass("active-switcher") ){
-      $("#gameplay").load("partials/gameplay/gameplayAPtop.html");
-      $("#builds").load("partials/builds/buildsAP.html");
-      $("#tricks").load("partials/tricks/tricksAP.html");
+      $("#builds").load("partials/builds/buildsAP.html");      
+      if( $("#klepto").hasClass("active-switcher") ){
+        $("#gameplay").load("partials/gameplay/gameplayKleptomancy.html");
+      }
+      else{
+        $("#gameplay").load("partials/gameplay/gameplayAPtop.html");
+      }
     }
     else if( $("#toplane").hasClass("active-switcher") && $("#af-ad").hasClass("active-switcher") ){
       $("#gameplay").load("partials/gameplay/gameplayADtop.html");
       $("#builds").load("partials/builds/buildsADtop.html");
-      $("#tricks").load("partials/tricks/tricksAD.html");
     }
     else if( $("#midlane").hasClass("active-switcher") && $("#af-ap").hasClass("active-switcher") ){
-      $("#gameplay").load("partials/gameplay/gameplayAPtop.html");
       $("#builds").load("partials/builds/buildsAP.html");
-      $("#tricks").load("partials/tricks/tricksAP.html");
+      
+      if( $("#klepto").hasClass("active-switcher") ){
+        $("#gameplay").load("partials/gameplay/gameplayKleptomancy.html");
+      }
+      else{
+        $("#gameplay").load("partials/gameplay/gameplayAPmid.html");
+      }
     }
     else if( $("#botlane").hasClass("active-switcher") && $("#af-ad").hasClass("active-switcher") ){
       $("#gameplay").load("partials/gameplay/gameplayADbot.html");
-      $("#builds").load("partials/builds/buildsADbot.html");
       $("#tricks").load("partials/tricks/tricksAD.html");
     }
     else if( $("#botlane").hasClass("active-switcher") && $("#af-ap").hasClass("active-switcher") ){
-      $("#gameplay").load("partials/gameplay/gameplayAPbot.html");
-      $("#builds").load("partials/builds/buildsAP.html");
-      $("#tricks").load("partials/tricks/tricksAP.html");
+      $("#builds").load("partials/builds/buildsAP.html");      
+      if( $("#klepto").hasClass("active-switcher") ){
+        $("#gameplay").load("partials/gameplay/gameplayKleptomancy.html");
+      }
+      else{
+        $("#gameplay").load("partials/gameplay/gameplayAPbot.html");
+      }
     }
     $(".welcome").css("display", "none");
     $("#abilities").css("display", "flex");
+    $("#tricks").load("partials/tricks/tricks.html");
     
     // Loading different ability-max partials
     if( $("#tank").hasClass("active-switcher")){

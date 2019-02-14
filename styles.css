@@ -368,8 +368,12 @@ src: url("fonts/adam_cg_pro.otf");
 }
 #tricks ul{
   padding: 0;
-  font-size: 17px;
-  font-family: "AdamCG";
+  font-size: 20px;
+  font-family: "Open Sans";
+  width: 50%;
+}
+#tricks ul li{
+  padding: 15px;
 }
 
 /**************/
@@ -471,6 +475,13 @@ footer{
   .build{
     width: 100% !important;
   }
+  .build-sections{
+    display: flex;
+    flex-direction: column;
+  }
+  .build-section{
+    width: 90%;
+  }
   /* GAMEPLAY */
   .gameplay-sections{
     flex-direction: column;
@@ -480,6 +491,10 @@ footer{
   }
   .gameplay-section p{
     font-size: 1.7em;
+  }
+  /* TRICKS */
+  #tricks ul{
+    width: 100%;
   }
   footer{
     width: 100%;
